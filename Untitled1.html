@@ -1,0 +1,36 @@
+
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+   
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+ <span id="dy">20以内的加减法</span>
+<input id="one" type="text" value="0"/> 
+<input id="two" type="text" value="0"/>  
+<input id="sum" type="button" value="计算"/>
+<script type="text/javascript">
+document.querySelector("input#sum").onclick=doIt;
+function doIt(){
+var num1=document.querySelector("input#one").value;
+var num1=parseInt(num1);
+var num2=document.querySelector("input#two").value;
+var num2=parseInt(num2);
+if(num1>=20&&num2>=20){
+	alert("这不是20以内加减法");
+}else{
+	document.querySelector("span#dy").textContent="答案为"+(num1+num2);
+}
+}
+</script>
+</body>
+</html>
+
+  
+  
+  
